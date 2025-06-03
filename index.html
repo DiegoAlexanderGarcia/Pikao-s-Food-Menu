@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <h1>PIKAO'S FOOD</h1>
+        <p>Lo mejor en la región</p>
+    </div>
+
+    <div class="categoria">Comidas Rápidas</div>
+    <div class="plato">
+        <span class="nombre">Hamburguesa Pikao's</span>
+        <span>25K</span>
+        <button onclick="agregarAlCarrito('Hamburguesa Pikao\'s - 25K')">Agregar</button>
+    </div>
+    <div class="plato">
+        <span class="nombre">Perro Sencillo</span>
+        <span>15K</span>
+        <button onclick="agregarAlCarrito('Perro Sencillo - 15K')">Agregar</button>
+    </div>
+    <div class="plato">
+        <span class="nombre">Chorizo BBQ</span>
+        <span>8K</span>
+        <button onclick="agregarAlCarrito('Chorizo BBQ - 8K')">Agregar</button>
+    </div>
+
+    <div class="categoria">Bebidas</div>
+    <div class="plato">
+        <span class="nombre">Frappe</span>
+        <span>12K</span>
+        <button onclick="agregarAlCarrito('Frappe - 12K')">Agregar</button>
+    </div>
+    <div class="plato">
+        <span class="nombre">Gaseosa</span>
+        <span>4K</span>
+        <button onclick="agregarAlCarrito('Gaseosa - 4K')">Agregar</button>
+    </div>
+
+    <div class="modo">
+        <p>¿Cómo deseas tu pedido?</p>
+        <label><input type="radio" name="modo" value="Domicilio" checked> Domicilio</label>
+        <label><input type="radio" name="modo" value="Para comer en el restaurante"> Comer en el restaurante</label>
+    </div>
+
+    <div class="carrito">
+        <h3>Tu pedido:</h3>
+        <ul id="lista-carrito"></ul>
+    </div>
+
+    <div class="pedido">
+        <button onclick="enviarPedidoWhatsApp()">Hacer pedido por WhatsApp</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
